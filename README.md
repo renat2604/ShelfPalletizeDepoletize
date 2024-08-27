@@ -21,7 +21,6 @@ startDepalletize<br />
 |        |       |           |         |           |                              |
 |      1 |     0 |         1 |       0 |         0 |                            ~ |
 |      2 |     1 |         1 |       0 |         0 |                            ~ |
-
 ```
 palletize:&nbsp;time&nbsp;-&nbsp;кол-во&nbsp;операций&nbsp;изьятия/внесения&nbsp;коробок&nbsp;с/в&nbsp;канал&nbsp;стеллажаbox,&nbsp;boxID&nbsp;-&nbsp;внутренний&nbsp;номер&nbsp;типа&nbsp;коробки,&nbsp;eventtype&nbsp;-&nbsp;тип&nbsp;события,&nbsp;stackID&nbsp;-&nbsp;номер&nbsp;стеллажа,&nbsp;channelID&nbsp;-&nbsp;номер&nbsp;канала,&nbsp;palletID&nbsp;-&nbsp;номер&nbsp;палеты.<br />
 
