@@ -656,7 +656,7 @@ int main()
     unsigned __int8 shelfFillerI = 0;
     unsigned __int32 time = 0;
     __int8 numeral[13], numeralI = 0, numberPalletFile = 2, numberSave = numberPalletFile;
-    char str[48], path[64] = "C://Users//user//Desktop//TEST3-SIMSIM//order_2", pathEnd[5] = ".csv";
+    char str[48], path[64] = "PathWithFileName", pathEnd[5] = ".csv";
     fstream pallet, depalletize, palletize, palletLog;
     countBoxOfType* countPalletBox = (countBoxOfType*)malloc(sizeof(countBoxOfType) * countBoxOfTypeSize);
     for (unsigned __int8 i = 0; i < countBoxOfTypeSize; i++)
@@ -742,13 +742,13 @@ int main()
         } while (numberPalletFile > 0);
         numberPalletFile = ++numberSave;
         numberSave = --numeralI;
-        for (__int16 i = 46; numeralI >= 0; numeralI--, i++)
+        for (__int16 i = /*OffsetToTheNumber "Order_" file*/; numeralI >= 0; numeralI--, i++)
         {
             path[i] = numeral[numeralI] + 48;
         }
-        for (__int16 i = 47 + numberSave; i < 51 + numberSave; i++)
+        for (__int16 i = /*OffsetToTheNumber "Order_" file*/ + 1 + numberSave; i < /*OffsetToTheNumber "Order_" file*/ + 4 + numberSave; i++)
         {
-            path[i] = pathEnd[i - 47 - numberSave];
+            path[i] = pathEnd[i - /*OffsetToTheNumber "Order_" file*/ + 1 - numberSave];
         }
         numberSave = numberPalletFile;
         numeralI = 0;
