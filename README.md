@@ -16,7 +16,7 @@ SKU, Quantity, Length, Width, Height, Weight, Strength, Aisle, Caustic
 depalletize: time - кол-во операций изьятия/внесения коробок с/в канал стеллажа, boxID - внутренний номер типа коробки, eventtype - тип события, stackID - номер стеллажа, channelID - номер канала, palletID - номер палеты.
 
 startDepalletize
-|  time  | boxID | eventtype | stackID | channelID |           palletID           |
+|  time  | boxID | eventtype | stackID | channelID |           palletID           |
 |        |       |           |         |           |                              |
 |      1 |     0 |         1 |       0 |         0 |                            ~ | 
 |      2 |     1 |         1 |       0 |         0 |                            ~ | 
