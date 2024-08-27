@@ -4,7 +4,7 @@
 Входные&nbsp;файлы:<br />
 Формат&nbsp;-&nbsp;.csv,&nbsp;название&nbsp;-&nbsp;order_N,&nbsp;где&nbsp;N&nbsp;-&nbsp;целочисленный&nbsp;номер&nbsp;без&nbsp;разделителей.<br />
 ```
-111141001011149550<br />
+111141001011149550
 SKU, Quantity, Length, Width, Height, Weight, Strength, Aisle, Caustic
 1001,	1,	229,	195,	246,	5409,	3,	17,	0,	
 1002,	1,	284,	240,	217,	7048,	3,	8,	0,	
@@ -16,7 +16,7 @@ SKU, Quantity, Length, Width, Height, Weight, Strength, Aisle, Caustic
 Выходные&nbsp;данные:<br />
 depalletize:&nbsp;time&nbsp;-&nbsp;кол-во&nbsp;операций&nbsp;изьятия/внесения&nbsp;коробок&nbsp;с/в&nbsp;канал&nbsp;стеллажа,&nbsp;boxID&nbsp;-&nbsp;внутренний&nbsp;номер&nbsp;типа&nbsp;коробки,&nbsp;eventtype&nbsp;-&nbsp;тип&nbsp;события,&nbsp;stackID&nbsp;-&nbsp;номер&nbsp;стеллажа,&nbsp;channelID&nbsp;-&nbsp;номер&nbsp;канала,&nbsp;palletID&nbsp;-&nbsp;номер&nbsp;палеты.<br />
 ```
-startDepalletize<br />
+startDepalletize
 |  time  | boxID | eventtype | stackID | channelID |           palletID           |
 |        |       |           |         |           |                              |
 |      1 |     0 |         1 |       0 |         0 |                            ~ |
@@ -38,7 +38,8 @@ palletLog:&nbsp;time&nbsp;-&nbsp;кол-во&nbsp;операций&nbsp;изья
 | 1200 |        0 |            0 |         4 | 
 | 1263 |        0 |            0 |         7 | 
 ```
-
-Сборка&nbsp;и&nbsp;запуск&nbsp;проекта:<br />
-Скопировать&nbsp;код&nbsp;из&nbsp;PalletizeDepolletize_practica.cpp<br />
-Создать&nbsp;консольное&nbsp;приложение&nbsp;в&nbsp;VSCode&nbsp;заменить&nbsp;на&nbsp;код&nbsp;из&nbsp;PalletizeDepolletize_practica.cpp,&nbsp;затем&nbsp;заменить&nbsp;коментарии&nbsp;выделенные&nbsp;"/*&nbsp;*/"&nbsp;на&nbsp;описанные&nbsp;в&nbsp;них&nbsp;параметры,&nbsp;собрать&nbsp;и&nbsp;запустить.<br />
+```
+Сборка и запуск проекта:
+Скопировать код из PalletizeDepolletize_practica.cpp
+Создать консольное приложение в VSCode заменить на код из PalletizeDepolletize_practica.cpp, затем заменить коментарии выделенные "/* */" на описанные в них параметры, собрать и запустить.
+```
