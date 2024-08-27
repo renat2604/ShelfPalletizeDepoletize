@@ -655,7 +655,7 @@ int main()
     unsigned __int8 countBoxTypeForPallet = 0, numberPalletProg = 0, palletIdSize = 15;
     unsigned __int8 shelfFillerI = 0;
     unsigned __int32 time = 0;
-    __int8 numeral[13], numeralI = 0, numberPalletFile = 2, numberSave = numberPalletFile;
+    __int8 numeral[13], numeralI = 0, numberPalletFile = /* Number of start "Order_" file */, numberSave = numberPalletFile;
     char str[48], path[64] = "PathWithFileName", pathEnd[5] = ".csv";
     fstream pallet, depalletize, palletize, palletLog;
     countBoxOfType* countPalletBox = (countBoxOfType*)malloc(sizeof(countBoxOfType) * countBoxOfTypeSize);
